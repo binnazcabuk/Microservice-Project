@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "f0c579f8-7ef9-411d-8221-d6a538f46de4": {
+      "ProjectGuid": "f0c579f8-7ef9-411d-8221-d6a538f46de4",
+      "DisplayName": "Catalog.Service.API",
+      "ColorIndex": 0
+    },
+    "663c8d27-4449-40ea-9268-314f060b230c": {
+      "ProjectGuid": "663c8d27-4449-40ea-9268-314f060b230c",
+      "DisplayName": "Solution Items",
+      "ColorIndex": 1
+    },
+    "2420c38b-4640-4d2e-80fc-71859855b003": {
+      "ProjectGuid": "2420c38b-4640-4d2e-80fc-71859855b003",
+      "DisplayName": "Shared",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
