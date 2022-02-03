@@ -1,5 +1,6 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
+using System;
 
 namespace Catalog.Service.API.Model
 {
@@ -18,7 +19,7 @@ namespace Catalog.Service.API.Model
         public string picture { get; set; }
 
         [BsonRepresentation(BsonType.DateTime)]
-        public BsonDateTime createdTime { get; set; }
+        public DateTime createdTime { get; set; }
 
         public Feature feature  { get; set; }
 
