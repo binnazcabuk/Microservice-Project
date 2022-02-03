@@ -303,6 +303,16 @@
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
         }
+      },
+      "Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v3.1",
+        "compile": {
+          "bin/placeholder/Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Shared.dll": {}
+        }
       }
     }
   },
@@ -801,12 +811,18 @@
         "system.runtime.compilerservices.unsafe.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Shared/1.0.0": {
+      "type": "project",
+      "path": "../../../Shared/Shared/Shared.csproj",
+      "msbuildProject": "../../../Shared/Shared/Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "AutoMapper.Extensions.Microsoft.DependencyInjection >= 11.0.0",
       "MongoDB.Driver >= 2.14.1",
+      "Shared >= 1.0.0",
       "Swashbuckle.AspNetCore >= 5.6.3"
     ]
   },
@@ -836,7 +852,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Shared\\Shared\\Shared.csproj": {
+              "projectPath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Shared\\Shared\\Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

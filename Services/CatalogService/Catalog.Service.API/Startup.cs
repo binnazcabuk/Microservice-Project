@@ -1,4 +1,5 @@
 using Catalog.Service.API.MongoDbSettings;
+using Catalog.Service.API.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +37,8 @@ namespace Catalog.Service.API
                 return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
             });
 
+            services.AddScoped<ICategoryService, CategoryService>();
+            services.AddScoped<ICourseService, CourseService>();
 
             services.AddSwaggerGen(c =>
             {
