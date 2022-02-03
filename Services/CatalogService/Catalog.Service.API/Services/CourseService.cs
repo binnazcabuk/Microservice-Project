@@ -56,7 +56,7 @@ namespace Catalog.Service.API.Services
 
             if (course==null)
             {
-                return BaseErrorCode.ecUknownError.CreateResponse("Bilinmeyen bir hata oluştu.");
+                return BaseErrorCode.ecUknownError.CreateResponse("Not found course");
             }
 
             course.category=await _categoryCollection.Find(x => x.id==course.categoryId).FirstAsync();
@@ -96,7 +96,7 @@ namespace Catalog.Service.API.Services
         {
 
             var updatedCourse = _mapper.Map<Course>(updatedDto);
-            var result = await _courseCollection.FindOneAndReplaceAsync(x => x.id==updatedDto.id, updatedCourse);
+            var result = await _courseCollection.FindOneAndReplaceAsync<Course>(x => x.id==updatedDto.id, updatedCourse);
 
             if (result==null)
             {

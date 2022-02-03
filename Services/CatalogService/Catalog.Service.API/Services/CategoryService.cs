@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Catalog.Service.API.Services
 {
-    public class CategoryService: ICategoryService
+    public class CategoryService : ICategoryService
     {
         private readonly IMongoCollection<Category> _categoryCollection;
 
@@ -30,18 +30,20 @@ namespace Catalog.Service.API.Services
         {
             var categories = await _categoryCollection.Find(c => true).ToListAsync();
 
-             return new BaseResponse<List<CategoryDto>>(_mapper.Map<List<CategoryDto>>(categories));
-          
+            return new BaseResponse<List<CategoryDto>>(_mapper.Map<List<CategoryDto>>(categories));
+
         }
 
-        public async Task<BaseResponse>createAsync(Category category)
+        public async Task<BaseResponse> createAsync(CategoryDto categoryDto)
         {
+            var category = _mapper.Map<Category>(categoryDto);
+
             await _categoryCollection.InsertOneAsync(category);
-        //    return Response<CategoryDto>.Success(_mapper.Map<CategoryDto>(category),200);
-  
+            //    return Response<CategoryDto>.Success(_mapper.Map<CategoryDto>(category),200);
+
             return new BaseResponse<CategoryDto>(_mapper.Map<CategoryDto>(category));
         }
-     
+
         public async Task<BaseResponse> getbyIdAsync(string id)
         {
             var category = await _categoryCollection.Find<Category>(c => c.id==id).FirstOrDefaultAsync();
@@ -52,7 +54,7 @@ namespace Catalog.Service.API.Services
             }
 
             return new BaseResponse<CategoryDto>(_mapper.Map<CategoryDto>(category));
-       }
+        }
 
     }
 }
