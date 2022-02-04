@@ -25,7 +25,42 @@
       "ProjectGuid": "88e03cd3-eb0c-46f2-92fa-cd5ae306f301",
       "DisplayName": "IdetityServer",
       "ColorIndex": 3
+    },
+    "310f780c-4f1a-457a-8dda-f9b763f11386": {
+      "ProjectGuid": "310f780c-4f1a-457a-8dda-f9b763f11386",
+      "DisplayName": "Services",
+      "ColorIndex": 4
+    },
+    "20ee0ec0-c812-4a13-bc09-30912ccbc0d5": {
+      "ProjectGuid": "20ee0ec0-c812-4a13-bc09-30912ccbc0d5",
+      "DisplayName": "PhotoStock",
+      "ColorIndex": 5
+    },
+    "6bd1921c-e919-4a95-b5a3-b96ba5578b3a": {
+      "ProjectGuid": "6bd1921c-e919-4a95-b5a3-b96ba5578b3a",
+      "DisplayName": "PhotoStock",
+      "ColorIndex": 6
+    },
+    "cf1ac9d2-236b-4b7f-ae40-6d96fa8d95fb": {
+      "ProjectGuid": "cf1ac9d2-236b-4b7f-ae40-6d96fa8d95fb",
+      "DisplayName": "PhotoStockService.API",
+      "ColorIndex": 7
+    },
+    "bbb83a2e-3292-4634-b549-b7210f310154": {
+      "ProjectGuid": "bbb83a2e-3292-4634-b549-b7210f310154",
+      "DisplayName": "PhotoStockService.API",
+      "ColorIndex": 8
+    },
+    "319cee91-23f6-45b8-b61a-21d5ee06832c": {
+      "ProjectGuid": "319cee91-23f6-45b8-b61a-21d5ee06832c",
+      "DisplayName": "BasketService.API",
+      "ColorIndex": 9
+    },
+    "7f9c4a63-e791-499b-a20c-2b394daf051e": {
+      "ProjectGuid": "7f9c4a63-e791-499b-a20c-2b394daf051e",
+      "DisplayName": "DiscountService.API",
+      "ColorIndex": 10
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 11
 }
