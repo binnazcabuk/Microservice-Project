@@ -2,6 +2,7 @@
 using IdentityServer4;
 using IdetityServer.Data;
 using IdetityServer.Models;
+using IdetityServer.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Identity;
@@ -50,6 +51,10 @@ namespace IdetityServer
                 .AddInMemoryClients(Config.Clients)
                 .AddInMemoryApiResources(Config.ApiResources)
                 .AddAspNetIdentity<ApplicationUser>();
+
+            builder.AddResourceOwnerValidator<IdentityResourceOwnerPasswordValidator>();
+            builder.AddExtensionGrantValidator<TokenExchangeExtensionGrantValidator>();
+
 
             // not recommended for production - you need to store your key material somewhere secure
             builder.AddDeveloperSigningCredential();

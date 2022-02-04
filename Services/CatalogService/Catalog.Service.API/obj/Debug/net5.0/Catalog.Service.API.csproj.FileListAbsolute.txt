@@ -50,3 +50,10 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catal
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\runtimes\win\native\mongocrypt.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Shared.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Shared.pdb
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
