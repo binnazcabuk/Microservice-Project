@@ -26,6 +26,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PhotoStockService", "PhotoS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PhotoStockService.API", "Services\PhotoStockService\PhotoStockService.API\PhotoStockService.API.csproj", "{BBB83A2E-3292-4634-B549-B7210F310154}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BasketService", "BasketService", "{6F2DADD8-0DD7-4849-8514-D1F94D6444CC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BasketService.API", "Services\BasketService\BasketService.API\BasketService.API.csproj", "{319CEE91-23F6-45B8-B61A-21D5EE06832C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -48,6 +52,10 @@ Global
 		{BBB83A2E-3292-4634-B549-B7210F310154}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBB83A2E-3292-4634-B549-B7210F310154}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBB83A2E-3292-4634-B549-B7210F310154}.Release|Any CPU.Build.0 = Release|Any CPU
+		{319CEE91-23F6-45B8-B61A-21D5EE06832C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{319CEE91-23F6-45B8-B61A-21D5EE06832C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{319CEE91-23F6-45B8-B61A-21D5EE06832C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{319CEE91-23F6-45B8-B61A-21D5EE06832C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -59,6 +67,8 @@ Global
 		{88E03CD3-EB0C-46F2-92FA-CD5AE306F301} = {F2B64AA2-6337-45B2-9098-8F3D6335FAE9}
 		{BD30FB9D-AEBE-4C6E-94CF-0CFBDE236D9F} = {4900DC22-2073-4105-9AF3-3F45D0799BB2}
 		{BBB83A2E-3292-4634-B549-B7210F310154} = {BD30FB9D-AEBE-4C6E-94CF-0CFBDE236D9F}
+		{6F2DADD8-0DD7-4849-8514-D1F94D6444CC} = {4900DC22-2073-4105-9AF3-3F45D0799BB2}
+		{319CEE91-23F6-45B8-B61A-21D5EE06832C} = {6F2DADD8-0DD7-4849-8514-D1F94D6444CC}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E40052A-3997-4B0B-A4BB-4F4D255B31F4}

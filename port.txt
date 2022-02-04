@@ -2,3 +2,4 @@ services
 -catalog.service.api------> http://localhost:5011
 -identity.service.api---------> http://localhost:5001
 -photostock.service.api------->http://localhost:5012
+-basket.service.api------->http://localhost:5013
