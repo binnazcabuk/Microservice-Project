@@ -60,7 +60,42 @@
       "ProjectGuid": "7f9c4a63-e791-499b-a20c-2b394daf051e",
       "DisplayName": "DiscountService.API",
       "ColorIndex": 10
+    },
+    "3903e9f5-aff4-416e-a00d-f247a9339173": {
+      "ProjectGuid": "3903e9f5-aff4-416e-a00d-f247a9339173",
+      "DisplayName": "OrderService.Domain",
+      "ColorIndex": 11
+    },
+    "49c89271-86b3-488c-81f0-9b2480330e5e": {
+      "ProjectGuid": "49c89271-86b3-488c-81f0-9b2480330e5e",
+      "DisplayName": "OrderService.Application",
+      "ColorIndex": 12
+    },
+    "2e6ce7b1-e154-414a-ad63-a8602dcbd014": {
+      "ProjectGuid": "2e6ce7b1-e154-414a-ad63-a8602dcbd014",
+      "DisplayName": "OrderService.Domain.Core",
+      "ColorIndex": 13
+    },
+    "e3a408f9-9288-49ab-9ffb-cedafe673e34": {
+      "ProjectGuid": "e3a408f9-9288-49ab-9ffb-cedafe673e34",
+      "DisplayName": "OrderService.Infrastructure",
+      "ColorIndex": 14
+    },
+    "023500f4-4df3-465c-a865-f3d8c5d910f9": {
+      "ProjectGuid": "023500f4-4df3-465c-a865-f3d8c5d910f9",
+      "DisplayName": "OrderService.API",
+      "ColorIndex": 15
+    },
+    "3adca3d1-cd64-4562-b69e-95ea3f75dc99": {
+      "ProjectGuid": "3adca3d1-cd64-4562-b69e-95ea3f75dc99",
+      "DisplayName": "FakePaymentService.API",
+      "ColorIndex": 0
+    },
+    "98c440d9-0d82-4a9c-8452-60507c739e1d": {
+      "ProjectGuid": "98c440d9-0d82-4a9c-8452-60507c739e1d",
+      "DisplayName": "Gateway.API",
+      "ColorIndex": 1
     }
   },
-  "NextColorIndex": 11
+  "NextColorIndex": 2
 }
