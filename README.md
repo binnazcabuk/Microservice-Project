@@ -29,8 +29,8 @@ Microservis mimarisi kullanılarak oluşturulan çeşitli kategorilerde kurslar 
 
 <hr><b>IdentityServer Microservice:</b>Kullanıcı datalarının tutulmasından,token ve refreshtoken üretilmesinden sorumlu olan microservis.
 <ul>
-<li>Sql Server(Veritabanı)<li>
-<li>Token / RefreshToken üretmek<li>
+<li>Sql Server(Veritabanı)</li>
+<li>Token/RefreshToken üretmek</li>
 <li>OAuth 2.0</li>
 </ul>
 <hr><b>PhotoStock Microservice:</b>Kurs fotograflarının tutulmasından ve sunulmasından sorumlu olan mikroservis.
