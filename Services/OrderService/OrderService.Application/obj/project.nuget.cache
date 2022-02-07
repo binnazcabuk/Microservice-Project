@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "GxjMnx6z3LPIISyeXz1LhE2FAD8aNRL0kYOp1QystcgW6oekUYE4eu04jU8MlQVlwTm/W4X7JkOVEL57iSsEVA==",
+  "dgSpecHash": "auVaU1qdiTU5OTT0KpjxqUwxC4ver4KVibDTk6h2DfKOCzcTqawKpFrACZWaqEcrdzsBpv1vIEptFiu/3PpHTw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\OrderService\\OrderService.Application\\OrderService.Application.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Teknar\\.nuget\\packages\\automapper\\11.0.1\\automapper.11.0.1.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512"
+  ],
   "logs": []
 }
