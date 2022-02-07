@@ -10,12 +10,12 @@ using System.Threading.Tasks;
 
 namespace DiscountService.API.Services
 {
-    public class DiscountService : IDiscountService
+    public class DiscountServices : IDiscountService
     {
         private readonly IConfiguration _configuration;
         private readonly IDbConnection _dbConnection;
 
-        public DiscountService(IConfiguration configuration)
+        public DiscountServices(IConfiguration configuration)
         {
             _configuration = configuration;
 
@@ -76,7 +76,7 @@ namespace DiscountService.API.Services
 
         public async Task<BaseResponse> Update(Discount discount)
         {
-            var status = await _dbConnection.ExecuteAsync("update discount set userid=@UserId, code=@Code, rate=@Rate where id=@Id", new { Id = discount.Id, UserId = discount.UserId, Code = discount.Code, Rate = discount.Rate });
+            var status = await _dbConnection.ExecuteAsync("update discount set userid=@UserId, code=@Code, rate=@Rate where id=@Id", new { Id = discount.id, UserId = discount.userId, Code = discount.code, Rate = discount.rate });
 
             if (status > 0)
             {

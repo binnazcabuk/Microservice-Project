@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "DYIQIVCgVpDknA53vWR99ZkQxES9DdAhrUvJv7Z0vcSFd01CbB5up0HNw7o6LmWUbZjEy5LHhTQQDTfl8Tjbgg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\OrderService\\OrderService.API\\OrderService.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\swashbuckle.aspnetcore\\5.6.3\\swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
