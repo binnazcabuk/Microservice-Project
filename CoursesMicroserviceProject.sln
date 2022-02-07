@@ -46,6 +46,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService.Domain.Core", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderService.Infrastructure", "Services\OrderService\OrderService.Infastucture\OrderService.Infrastructure.csproj", "{E3A408F9-9288-49AB-9FFB-CEDAFE673E34}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FakePaymentService", "FakePaymentService", "{50B3CE88-336B-4F4E-AF7F-F0D98768DC88}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakePaymentService.API", "Services\FakePaymentService\FakePaymentService.API\FakePaymentService.API.csproj", "{3ADCA3D1-CD64-4562-B69E-95EA3F75DC99}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -96,6 +100,10 @@ Global
 		{E3A408F9-9288-49AB-9FFB-CEDAFE673E34}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E3A408F9-9288-49AB-9FFB-CEDAFE673E34}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E3A408F9-9288-49AB-9FFB-CEDAFE673E34}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3ADCA3D1-CD64-4562-B69E-95EA3F75DC99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3ADCA3D1-CD64-4562-B69E-95EA3F75DC99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3ADCA3D1-CD64-4562-B69E-95EA3F75DC99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3ADCA3D1-CD64-4562-B69E-95EA3F75DC99}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -117,6 +125,8 @@ Global
 		{49C89271-86B3-488C-81F0-9B2480330E5E} = {56918356-D96A-4D18-A66C-315E01C2A3B8}
 		{2E6CE7B1-E154-414A-AD63-A8602DCBD014} = {56918356-D96A-4D18-A66C-315E01C2A3B8}
 		{E3A408F9-9288-49AB-9FFB-CEDAFE673E34} = {56918356-D96A-4D18-A66C-315E01C2A3B8}
+		{50B3CE88-336B-4F4E-AF7F-F0D98768DC88} = {4900DC22-2073-4105-9AF3-3F45D0799BB2}
+		{3ADCA3D1-CD64-4562-B69E-95EA3F75DC99} = {50B3CE88-336B-4F4E-AF7F-F0D98768DC88}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3E40052A-3997-4B0B-A4BB-4F4D255B31F4}
