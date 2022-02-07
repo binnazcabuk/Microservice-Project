@@ -6,3 +6,4 @@ services
 -discount.service.api------->http://localhost:5014
 -order.service.api------->http://localhost:5015
 -fakepayment.service.api------->http://localhost:5016
+-gateway.api------->http://localhost:5000
