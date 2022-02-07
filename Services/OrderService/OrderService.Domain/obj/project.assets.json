@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    "net5.0": {
+      "OrderService.Domain.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "compile": {
+          "bin/placeholder/OrderService.Domain.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/OrderService.Domain.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "OrderService.Domain.Core/1.0.0": {
+      "type": "project",
+      "path": "../OrderService.Domain.Core/OrderService.Domain.Core.csproj",
+      "msbuildProject": "../OrderService.Domain.Core/OrderService.Domain.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net5.0": []
+    "net5.0": [
+      "OrderService.Domain.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Teknar\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\OrderService\\OrderService.Domain.Core\\OrderService.Domain.Core.csproj": {
+              "projectPath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\OrderService\\OrderService.Domain.Core\\OrderService.Domain.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
