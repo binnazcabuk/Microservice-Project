@@ -1,0 +1,15 @@
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.deps.json
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\ref\OrderService.Domain.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.pdb
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.Core.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\bin\Debug\net5.0\OrderService.Domain.Core.pdb
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.csproj.AssemblyReference.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.AssemblyInfoInputs.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.AssemblyInfo.cs
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.csproj.CopyComplete
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\ref\OrderService.Domain.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain\obj\Debug\net5.0\OrderService.Domain.pdb

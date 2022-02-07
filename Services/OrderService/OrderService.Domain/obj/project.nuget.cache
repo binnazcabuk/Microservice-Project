@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "nTZ8HXFJcYlis6JtSKXjVa7lzHGaoT/9CS9WxmEVxBsjT2H6hEv7XxkCsl01vaWUaIjQUqoS3pEAF1MRy8TLjw==",
+  "dgSpecHash": "o2cCu66BHkrExlxJg1zJWbn68cEhlkRdYstnH2PKwzwXipNCsMSzSY6G6QWqDYOiQLsYWXJTXgXYtqQs10vWIw==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\OrderService\\OrderService.Domain\\OrderService.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Teknar\\.nuget\\packages\\mediatr\\10.0.1\\mediatr.10.0.1.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\mediatr.contracts\\1.0.1\\mediatr.contracts.1.0.1.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\mediatr.extensions.microsoft.dependencyinjection\\10.0.1\\mediatr.extensions.microsoft.dependencyinjection.10.0.1.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\6.0.0\\microsoft.extensions.dependencyinjection.abstractions.6.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
