@@ -70,3 +70,6 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderSe
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\obj\Debug\net5.0\ref\OrderService.API.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\obj\Debug\net5.0\OrderService.API.pdb
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\obj\Debug\net5.0\OrderService.API.genruntimeconfig.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\AutoMapper.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\OrderService.Application.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\OrderService.Application.pdb
