@@ -39,3 +39,4 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\GatewayAPI\Gateway.API\bin\De
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\GatewayAPI\Gateway.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\GatewayAPI\Gateway.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\GatewayAPI\Gateway.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\GatewayAPI\Gateway.API\bin\Debug\net5.0\IdentityModel.dll

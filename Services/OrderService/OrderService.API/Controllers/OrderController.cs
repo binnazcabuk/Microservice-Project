@@ -11,12 +11,12 @@ namespace OrderService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrdersController : CustomBaseController
+    public class OrderController : CustomBaseController
     {
         private readonly IMediator _mediator;
         private readonly ISharedIdentityService _sharedIdentityService;
 
-        public OrdersController(IMediator mediator, ISharedIdentityService sharedIdentityService)
+        public OrderController(IMediator mediator, ISharedIdentityService sharedIdentityService)
         {
             _mediator = mediator;
             _sharedIdentityService = sharedIdentityService;

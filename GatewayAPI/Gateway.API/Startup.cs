@@ -1,3 +1,4 @@
+using Gateway.API.DelegateHandlers;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -23,14 +24,14 @@ namespace Gateway.API
         }
         public void ConfigureServices(IServiceCollection services)
         {
-           // services.AddHttpClient<TokenExhangeDelegateHandler>();
+            services.AddHttpClient<TokenExhangeDelegateHandler>();
             services.AddAuthentication().AddJwtBearer("GatewayAuthenticationScheme", options =>
             {
                 options.Authority = Configuration["IdentityServerURL"];
                 options.Audience = "resource_gateway";
                 options.RequireHttpsMetadata = false;
             });
-            services.AddOcelot();
+            services.AddOcelot().AddDelegatingHandler<TokenExhangeDelegateHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
