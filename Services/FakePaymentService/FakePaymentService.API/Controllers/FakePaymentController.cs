@@ -1,19 +1,20 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shared.BaseResponses;
+using Shared.Dtos;
 using System.Threading.Tasks;
 
 namespace FakePaymentService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class FakePaymentController : ControllerBase
+    public class FakePaymentController : CustomBaseController
     {
 
         [HttpPost]
-        public BaseResponse ReceivePayment()
+        public Task<IActionResult> ReceivePayment()
         {
-            return new BaseResponse();
+            return null;
         }
 
             //private readonly ISendEndpointProvider _sendEndpointProvider;

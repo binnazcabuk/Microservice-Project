@@ -95,7 +95,17 @@
       "ProjectGuid": "98c440d9-0d82-4a9c-8452-60507c739e1d",
       "DisplayName": "Gateway.API",
       "ColorIndex": 1
+    },
+    "a6772cd1-96e9-4807-acb1-58397e477957": {
+      "ProjectGuid": "a6772cd1-96e9-4807-acb1-58397e477957",
+      "DisplayName": "CoursesUI",
+      "ColorIndex": 2
+    },
+    "f2042aff-0578-4fac-9170-5faa0d2788cc": {
+      "ProjectGuid": "f2042aff-0578-4fac-9170-5faa0d2788cc",
+      "DisplayName": "FreeCourse.Web",
+      "ColorIndex": 3
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 4
 }

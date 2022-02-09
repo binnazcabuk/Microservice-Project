@@ -1,6 +1,7 @@
 ﻿using DiscountService.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Shared.BaseResponses;
 using Shared.Services;
 using System.Threading.Tasks;
 
@@ -8,7 +9,7 @@ namespace DiscountService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DiscountController : ControllerBase
+    public class DiscountController : CustomBaseController
     {
 
         private readonly IDiscountService _discountService;
@@ -24,7 +25,7 @@ namespace DiscountService.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            return Ok(await _discountService.GetAll());
+            return CreateActionResultInstance(await _discountService.GetAll());
         }
 
         //api/discounts/4
@@ -33,7 +34,7 @@ namespace DiscountService.API.Controllers
         {
             var discount = await _discountService.GetById(id);
 
-            return Ok(discount);
+            return CreateActionResultInstance(discount);
         }
 
         [HttpGet]
@@ -45,25 +46,25 @@ namespace DiscountService.API.Controllers
 
             var discount = await _discountService.GetByCodeAndUserId(code, userId);
 
-            return Ok(discount);
+            return CreateActionResultInstance(discount);
         }
 
         [HttpPost]
         public async Task<IActionResult> Save(Models.Discount discount)
         {
-            return Ok(await _discountService.Save(discount));
+            return CreateActionResultInstance(await _discountService.Save(discount));
         }
 
         [HttpPut]
         public async Task<IActionResult> Update(Models.Discount discount)
         {
-            return Ok(await _discountService.Update(discount));
+            return CreateActionResultInstance(await _discountService.Update(discount));
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
-            return Ok(await _discountService.Delete(id));
+            return CreateActionResultInstance(await _discountService.Delete(id));
         }
     }
 }

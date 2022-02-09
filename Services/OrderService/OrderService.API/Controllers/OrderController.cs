@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using OrderService.Application.Commands;
 using OrderService.Application.Queries;
+using Shared.BaseResponses;
 using Shared.Services;
 using System.Threading.Tasks;
 
@@ -10,12 +11,12 @@ namespace OrderService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class OrderController : ControllerBase
+    public class OrdersController : CustomBaseController
     {
         private readonly IMediator _mediator;
         private readonly ISharedIdentityService _sharedIdentityService;
 
-        public OrderController(IMediator mediator, ISharedIdentityService sharedIdentityService)
+        public OrdersController(IMediator mediator, ISharedIdentityService sharedIdentityService)
         {
             _mediator = mediator;
             _sharedIdentityService = sharedIdentityService;
@@ -26,7 +27,7 @@ namespace OrderService.API.Controllers
         {
             var response = await _mediator.Send(new GetOrdersByUserIdQuery { UserId = _sharedIdentityService.GetUserId });
 
-            return Ok(response);
+            return CreateActionResultInstance(response);
         }
 
         [HttpPost]
@@ -34,7 +35,7 @@ namespace OrderService.API.Controllers
         {
             var response = await _mediator.Send(createOrderCommand);
 
-            return Ok(response);
+            return CreateActionResultInstance(response);
         }
     }
 }

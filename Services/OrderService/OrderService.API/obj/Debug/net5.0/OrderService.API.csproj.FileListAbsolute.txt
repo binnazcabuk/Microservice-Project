@@ -73,3 +73,6 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderSe
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\AutoMapper.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\OrderService.Application.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\OrderService.Application.pdb
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.API\bin\Debug\net5.0\Newtonsoft.Json.dll

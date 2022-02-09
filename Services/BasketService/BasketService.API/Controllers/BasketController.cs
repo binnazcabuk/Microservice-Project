@@ -2,6 +2,7 @@
 using BasketService.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Shared.BaseResponses;
 using Shared.Services;
 using System.Threading.Tasks;
 
@@ -9,7 +10,7 @@ namespace BasketService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasketController : ControllerBase
+    public class BasketController : CustomBaseController
     {
 
         private readonly IBasketService _basketService;
@@ -24,8 +25,7 @@ namespace BasketService.API.Controllers
         [HttpGet]
         public async Task<IActionResult> GetBasket()
         {
-           /// var claims = User.Claims;
-            return Ok(await _basketService.GetBasket(_sharedIdentityService.GetUserId));
+            return CreateActionResultInstance(await _basketService.GetBasket(_sharedIdentityService.GetUserId));
         }
 
         [HttpPost]
@@ -34,14 +34,14 @@ namespace BasketService.API.Controllers
             basketDto.UserId = _sharedIdentityService.GetUserId;
             var response = await _basketService.SaveOrUpdate(basketDto);
 
-            return Ok(response);
+            return CreateActionResultInstance(response);
         }
 
         [HttpDelete]
         public async Task<IActionResult> DeleteBasket()
 
         {
-            return Ok(await _basketService.Delete(_sharedIdentityService.GetUserId));
+            return CreateActionResultInstance(await _basketService.Delete(_sharedIdentityService.GetUserId));
         }
     }
 }

@@ -4,6 +4,7 @@ using Catalog.Service.API.Model;
 using Catalog.Service.API.MongoDbSettings;
 using MongoDB.Driver;
 using Shared.BaseResponses;
+using Shared.Dtos;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,111 +16,114 @@ namespace Catalog.Service.API.Services
     {
         private readonly IMongoCollection<Course> _courseCollection;
         private readonly IMongoCollection<Category> _categoryCollection;
-
         private readonly IMapper _mapper;
+      // private readonly Mass.IPublishEndpoint _publishEndpoint;
 
-        public CourseService(IMapper mapper,IDatabaseSettings databaseSettings)
+        public CourseService(IMapper mapper, IDatabaseSettings databaseSettings/*, Mass.IPublishEndpoint publishEndpoint*/)
         {
             var client = new MongoClient(databaseSettings.ConnectionString);
+
             var database = client.GetDatabase(databaseSettings.DatabaseName);
 
-            _courseCollection=database.GetCollection<Course>(databaseSettings.CourseCollectionName);
-            _categoryCollection=database.GetCollection<Category>(databaseSettings.CategoryCollectionName);
-            _mapper=mapper;
+            _courseCollection = database.GetCollection<Course>(databaseSettings.CourseCollectionName);
+
+            _categoryCollection = database.GetCollection<Category>(databaseSettings.CategoryCollectionName);
+            _mapper = mapper;
+
+           // _publishEndpoint = publishEndpoint;
         }
 
-
-        public async Task<BaseResponse> getAllAsync()
+        public async Task<Response<List<CourseDto>>> GetAllAsync()
         {
-            //mongodb de join işlemi olmadığı için categorydto tektek eklenir.
-
-            var courses = await _courseCollection.Find(c => true).ToListAsync();
-            if (courses.Any())
-            {
-                foreach (var course in courses)
-                {
-                    course.category=await _categoryCollection.Find<Category>(x => x.id==course.categoryId).FirstAsync();
-                   // course.category=await _categoryCollection.Find(x => x.id==course.categoryId).FirstAsync();
-                }
-            }
-            else
-            {
-                courses=new List<Course>();
-            }
-            return new BaseResponse<List<CourseDto>>(_mapper.Map<List<CourseDto>>(courses));
-
-        }
-
-        public async Task<BaseResponse> getByIdAsync(string id)
-        {
-            var course = await _courseCollection.Find(x => x.id==id).FirstOrDefaultAsync();
-
-            if (course==null)
-            {
-                return BaseErrorCode.ecUknownError.CreateResponse("Not found course");
-            }
-
-            course.category=await _categoryCollection.Find(x => x.id==course.categoryId).FirstAsync();
-            return new BaseResponse<CourseDto>(_mapper.Map<CourseDto>(course));
-        }
-
-        public async Task<BaseResponse> getAllByUserIdAsync(string id)
-        {
-            var courses = await _courseCollection.Find(x => x.userId==id).ToListAsync();
+            var courses = await _courseCollection.Find(course => true).ToListAsync();
 
             if (courses.Any())
             {
                 foreach (var course in courses)
                 {
-                    course.category=await _categoryCollection.Find<Category>(x => x.id==course.categoryId).FirstAsync();
-                    // course.category=await _categoryCollection.Find(x => x.id==course.categoryId).FirstAsync();
+                    course.category = await _categoryCollection.Find<Category>(x => x.id == course.categoryId).FirstAsync();
                 }
             }
             else
             {
-                courses=new List<Course>();
+                courses = new List<Course>();
             }
-           
-            return new BaseResponse<CourseDto>(_mapper.Map<CourseDto>(courses));
+
+            return Response<List<CourseDto>>.Success(_mapper.Map<List<CourseDto>>(courses), 200);
         }
 
-        public async Task<BaseResponse> createAsync(CourseCreatedDto courseDto)
+        public async Task<Response<CourseDto>> GetByIdAsync(string id)
         {
-            var newCourse = _mapper.Map<Course>(courseDto);
-            newCourse.createdTime=DateTime.Now;
+            var course = await _courseCollection.Find<Course>(x => x.id == id).FirstOrDefaultAsync();
+
+            if (course == null)
+            {
+                return Response<CourseDto>.Fail("Course not found", 404);
+            }
+            course.category = await _categoryCollection.Find<Category>(x => x.id == course.categoryId).FirstAsync();
+
+            return Response<CourseDto>.Success(_mapper.Map<CourseDto>(course), 200);
+        }
+
+        public async Task<Response<List<CourseDto>>> GetAllByUserIdAsync(string userId)
+        {
+            var courses = await _courseCollection.Find<Course>(x => x.userId == userId).ToListAsync();
+
+            if (courses.Any())
+            {
+                foreach (var course in courses)
+                {
+                    course.category = await _categoryCollection.Find<Category>(x => x.id == course.categoryId).FirstAsync();
+                }
+            }
+            else
+            {
+                courses = new List<Course>();
+            }
+
+            return Response<List<CourseDto>>.Success(_mapper.Map<List<CourseDto>>(courses), 200);
+        }
+
+        public async Task<Response<CourseDto>> CreateAsync(CourseCreatedDto courseCreateDto)
+        {
+            var newCourse = _mapper.Map<Course>(courseCreateDto);
+
+            newCourse.createdTime = DateTime.Now;
             await _courseCollection.InsertOneAsync(newCourse);
 
-            return new BaseResponse<CourseDto>(_mapper.Map<CourseDto>(newCourse));
+            return Response<CourseDto>.Success(_mapper.Map<CourseDto>(newCourse), 200);
         }
 
-        public async Task<BaseResponse> updateAsync(CourseUpdatedDto updatedDto)
+        public async Task<Response<NoContent>> UpdateAsync(CourseUpdatedDto courseUpdateDto)
         {
+            var updateCourse = _mapper.Map<Course>(courseUpdateDto);
 
-            var updatedCourse = _mapper.Map<Course>(updatedDto);
-            var result = await _courseCollection.FindOneAndReplaceAsync<Course>(x => x.id==updatedDto.id, updatedCourse);
+            var result = await _courseCollection.FindOneAndReplaceAsync(x => x.id == courseUpdateDto.id, updateCourse);
 
-            if (result==null)
+            if (result == null)
             {
-                return BaseErrorCode.ecUknownError.CreateResponse("Course not found");
+                return Response<NoContent>.Fail("Course not found", 404);
             }
 
-            return new BaseResponse();
+          //  await _publishEndpoint.Publish<CourseNameChangedEvent>(new CourseNameChangedEvent { CourseId = updateCourse.Id, UpdatedName = courseUpdateDto.Name });
+
+            return Response<NoContent>.Success(204);
         }
 
-        public async Task<BaseResponse>deleteAsync(string id)
+        public async Task<Response<NoContent>> DeleteAsync(string id)
         {
-            var result = await _courseCollection.DeleteOneAsync(x => x.id==id);
+            var result = await _courseCollection.DeleteOneAsync(x => x.id == id);
 
-            if (result.DeletedCount>0)
+            if (result.DeletedCount > 0)
             {
-                return new BaseResponse();
+                return Response<NoContent>.Success(204);
             }
             else
             {
-                return new BaseResponse<string>("Course not fpund");
+                return Response<NoContent>.Fail("Course not found", 404);
             }
         }
     }
 
-    
+
 }

@@ -2,7 +2,6 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderSe
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\bin\Debug\net5.0\OrderService.Domain.Core.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\bin\Debug\net5.0\ref\OrderService.Domain.Core.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\bin\Debug\net5.0\OrderService.Domain.Core.pdb
-C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.csproj.AssemblyReference.cache
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.AssemblyInfoInputs.cache
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.AssemblyInfo.cs
@@ -10,3 +9,4 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderSe
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\ref\OrderService.Domain.Core.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.pdb
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.csproj.AssemblyReference.cache

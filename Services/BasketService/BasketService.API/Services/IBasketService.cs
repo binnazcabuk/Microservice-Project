@@ -1,15 +1,18 @@
 ﻿using BasketService.API.Dtos;
 using Shared.BaseResponses;
+using Shared.Dtos;
 using System.Threading.Tasks;
 
 namespace BasketService.API.Services
 {
     public interface IBasketService
     {
-        Task<BaseResponse> GetBasket(string userId);
+      
+            Task<Response<BasketDto>> GetBasket(string userId);
 
-        Task<BaseResponse> SaveOrUpdate(BasketDto basketDto);
+            Task<Response<bool>> SaveOrUpdate(BasketDto basketDto);
 
-        Task<BaseResponse> Delete(string userId);
+            Task<Response<bool>> Delete(string userId);
+        
     }
 }

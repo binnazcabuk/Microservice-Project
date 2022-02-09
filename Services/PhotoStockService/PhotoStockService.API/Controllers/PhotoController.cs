@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PhotoStockService.API.Dtos;
 using Shared.BaseResponses;
+using Shared.Dtos;
 using System;
 using System.IO;
 using System.Threading;
@@ -11,48 +12,41 @@ namespace PhotoStockService.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class PhotoController : ControllerBase
+    public class PhotoController : CustomBaseController
     {
-        [HttpPost("")]
-        public async Task<BaseResponse> photoSave(IFormFile photo, CancellationToken cancellationToken)
+        [HttpPost]
+        public async Task<IActionResult> PhotoSave(IFormFile photo, CancellationToken cancellationToken)
         {
-            ///CancellationToken  foroğraf eklerken bir hata olduğunda tetiklenir ve asekron işlemi durdurur.
-
-            PhotoDto photoDto = new();
-
-            if (photo!=null&& photo.Length>0)
+            if (photo != null && photo.Length > 0)
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pictures/", photo.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pictures", photo.FileName);
 
                 using var stream = new FileStream(path, FileMode.Create);
                 await photo.CopyToAsync(stream, cancellationToken);
 
-                var pic = "pictures/"+photo.FileName;
+                var returnPath = photo.FileName;
 
-                photoDto.Url=pic;
-                return new BaseResponse<PhotoDto>(photoDto);
+                PhotoDto photoDto = new() { Url = returnPath };
+
+                return CreateActionResultInstance(Response<PhotoDto>.Success(photoDto, 200));
             }
 
-            return BaseErrorCode.ecUknownError.CreateResponse("Photo not found");
-
+            return CreateActionResultInstance(Response<PhotoDto>.Fail("photo is empty", 400));
         }
 
-       
-         [HttpPost("delete")]
-        public BaseResponse photoDelete(string photoUrl)
+
+        [HttpDelete]
+        public IActionResult PhotoDelete(string photoUrl)
         {
-            try
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pictures", photoUrl);
+            if (!System.IO.File.Exists(path))
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pictures/", photoUrl);
-                System.IO.File.Delete(path);
-
-                return new BaseResponse();
-            }
-            catch (Exception)
-            {
-                return BaseErrorCode.ecUknownError.CreateResponse("photo not found");
+                return CreateActionResultInstance(Response<NoContent>.Fail("photo not found", 404));
             }
 
+            System.IO.File.Delete(path);
+
+            return CreateActionResultInstance(Response<NoContent>.Success(204));
         }
     }
 }

@@ -39,3 +39,6 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\Disc
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\DiscountService.API\bin\Debug\net5.0\System.Runtime.CompilerServices.Unsafe.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\DiscountService.API\bin\Debug\net5.0\Shared.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\DiscountService.API\bin\Debug\net5.0\Shared.pdb
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\DiscountService.API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\DiscountService.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\DiscountService\DiscountService.API\bin\Debug\net5.0\Newtonsoft.Json.dll

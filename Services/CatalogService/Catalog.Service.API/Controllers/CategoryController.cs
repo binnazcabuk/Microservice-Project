@@ -3,43 +3,45 @@ using Catalog.Service.API.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Shared.BaseResponses;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace Catalog.Service.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoryController : CustomBaseController
     {
         private readonly ICategoryService _categoryService;
 
         public CategoryController(ICategoryService categoryService)
         {
-            _categoryService=categoryService;
+            _categoryService = categoryService;
         }
 
         [HttpGet]
-        public async Task<BaseResponse> getAll()
+        public async Task<IActionResult> GetAll()
         {
-            var response = await _categoryService.getAllAsync();
+            var categories = await _categoryService.GetAllAsync();
 
-            return new BaseResponse<object>(response);
+            return CreateActionResultInstance(categories);
         }
 
-        [HttpPost("create")]
-        public async Task<BaseResponse> create(CategoryDto categoryDto)
-        {
-            var response = await _categoryService.createAsync(categoryDto);
-
-            return new BaseResponse<object>(response);
-        }
-
+        //categories/5
         [HttpGet("{id}")]
-        public async Task<BaseResponse> getById(string id)
+        public async Task<IActionResult> GetById(string id)
         {
-            var response = await _categoryService.getbyIdAsync(id);
+            var category = await _categoryService.GetByIdAsync(id);
 
-            return new BaseResponse<object>(response);
+            return CreateActionResultInstance(category);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create(CategoryDto categoryDto)
+        {
+            var response = await _categoryService.CreateAsync(categoryDto);
+
+            return CreateActionResultInstance(response);
         }
     }
 }

@@ -35,3 +35,6 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\F
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\FakePaymentService.API\obj\Debug\net5.0\ref\FakePaymentService.API.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\FakePaymentService.API\obj\Debug\net5.0\FakePaymentService.API.pdb
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\FakePaymentService.API\obj\Debug\net5.0\FakePaymentService.API.genruntimeconfig.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\FakePaymentService.API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\FakePaymentService.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\FakePaymentService\FakePaymentService.API\bin\Debug\net5.0\Newtonsoft.Json.dll

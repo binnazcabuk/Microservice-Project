@@ -57,3 +57,6 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catal
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.DotNet.PlatformAbstractions.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\CatalogService\Catalog.Service.API\bin\Debug\net5.0\Newtonsoft.Json.dll

@@ -1,0 +1,8 @@
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.csproj.AssemblyReference.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.AssemblyInfoInputs.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.AssemblyInfo.cs
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.csproj.CoreCompileInputs.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.RazorAssemblyInfo.cache
+C:\Users\Teknar\Desktop\CoursesMicroserviceProject\CoursesUI\obj\Debug\net5.0\CoursesUI.RazorAssemblyInfo.cs
