@@ -18,7 +18,7 @@ namespace FreeCourse.Web.Helpers
 
         public string GetPhotoStockUrl(string photoUrl)
         {
-            return $"{_serviceApiSettings.PhotoStockUri}/pictures/{photoUrl}";
+            return $"{_serviceApiSettings.PhotoStockUri}/photos/{photoUrl}";
         }
     }
 }

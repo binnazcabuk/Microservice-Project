@@ -11,12 +11,12 @@ using System.Threading.Tasks;
 
 namespace DiscountService.API.Services
 {
-    public class DiscountService : IDiscountService
+    public class DiscountServices : IDiscountService
     {
         private readonly IConfiguration _configuration;
         private readonly IDbConnection _dbConnection;
 
-        public DiscountService(IConfiguration configuration)
+        public DiscountServices(IConfiguration configuration)
         {
             _configuration = configuration;
 

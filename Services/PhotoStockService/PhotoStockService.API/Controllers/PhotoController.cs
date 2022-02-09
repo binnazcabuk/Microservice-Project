@@ -19,7 +19,7 @@ namespace PhotoStockService.API.Controllers
         {
             if (photo != null && photo.Length > 0)
             {
-                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pictures", photo.FileName);
+                var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/photos", photo.FileName);
 
                 using var stream = new FileStream(path, FileMode.Create);
                 await photo.CopyToAsync(stream, cancellationToken);
@@ -38,7 +38,7 @@ namespace PhotoStockService.API.Controllers
         [HttpDelete]
         public IActionResult PhotoDelete(string photoUrl)
         {
-            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/pictures", photoUrl);
+            var path = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/photos", photoUrl);
             if (!System.IO.File.Exists(path))
             {
                 return CreateActionResultInstance(Response<NoContent>.Fail("photo not found", 404));

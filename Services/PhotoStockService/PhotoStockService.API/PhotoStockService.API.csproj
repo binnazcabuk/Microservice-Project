@@ -10,11 +10,11 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="wwwroot\pictures\" />
+    <ProjectReference Include="..\..\..\Shared\Shared\Shared.csproj" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\..\Shared\Shared\Shared.csproj" />
+    <Folder Include="wwwroot\photos\" />
   </ItemGroup>
 
 </Project>

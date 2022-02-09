@@ -7,4 +7,3 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Shared\Shared\obj\Debug\netco
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Shared\Shared\obj\Debug\netcoreapp3.1\Shared.csproj.CoreCompileInputs.cache
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Shared\Shared\obj\Debug\netcoreapp3.1\Shared.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Shared\Shared\obj\Debug\netcoreapp3.1\Shared.pdb
-C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Shared\Shared\obj\Debug\netcoreapp3.1\Shared.csproj.AssemblyReference.cache

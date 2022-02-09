@@ -9,4 +9,3 @@ C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderSe
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\ref\OrderService.Domain.Core.dll
 C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.pdb
-C:\Users\Teknar\Desktop\CoursesMicroserviceProject\Services\OrderService\OrderService.Domain.Core\obj\Debug\net5.0\OrderService.Domain.Core.csproj.AssemblyReference.cache
