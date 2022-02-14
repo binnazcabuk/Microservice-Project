@@ -37,6 +37,11 @@ services:
     build: 
      context: .
      dockerfile: Services/DiscountService/DiscountService.API/Dockerfile
+   fakepayment.api:
+    image: fakepayment_api_image
+    build: 
+     context: .
+     dockerfile: Services/FakePaymentService/FakePaymentService.API/Dockerfile
 volumes:
   catalogdb_volume:
   discount_volume:
