@@ -42,6 +42,22 @@ services:
     build: 
      context: .
      dockerfile: Services/FakePaymentService/FakePaymentService.API/Dockerfile
+   order.api:
+    image: order_api_image
+    build: 
+     context: .
+     dockerfile: Services/OrderService/OrderService.API/Dockerfile
+   gateway.api:
+    image: gateway_api_image
+    build: 
+     context: .
+     dockerfile: GatewayAPI/Gateway.API/Dockerfile
+   aspnetcoremvc.web:
+    image: aspnetcoremvc.web_image
+    build:
+     context: .
+     dockerfile: CoursesUI/Course.Web/Dockerfile
+
 volumes:
   catalogdb_volume:
   discount_volume:

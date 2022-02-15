@@ -105,7 +105,12 @@
       "ProjectGuid": "f2042aff-0578-4fac-9170-5faa0d2788cc",
       "DisplayName": "FreeCourse.Web",
       "ColorIndex": 3
+    },
+    "87ea9d81-261b-4844-b737-771fd50589c9": {
+      "ProjectGuid": "87ea9d81-261b-4844-b737-771fd50589c9",
+      "DisplayName": "Course.Web",
+      "ColorIndex": 4
     }
   },
-  "NextColorIndex": 4
+  "NextColorIndex": 5
 }
