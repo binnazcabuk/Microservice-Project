@@ -110,7 +110,12 @@
       "ProjectGuid": "87ea9d81-261b-4844-b737-771fd50589c9",
       "DisplayName": "Course.Web",
       "ColorIndex": 4
+    },
+    "121a7a47-28d2-4e41-8211-e4fa95228cc9": {
+      "ProjectGuid": "121a7a47-28d2-4e41-8211-e4fa95228cc9",
+      "DisplayName": "Course.Web",
+      "ColorIndex": 5
     }
   },
-  "NextColorIndex": 5
+  "NextColorIndex": 6
 }

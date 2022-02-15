@@ -4,6 +4,6 @@
     <DebuggerFlavor>ProjectDebugger</DebuggerFlavor>
   </PropertyGroup>
   <PropertyGroup>
-    <ActiveDebugProfile>FreeCourse.Web</ActiveDebugProfile>
+    <ActiveDebugProfile>Course.Web</ActiveDebugProfile>
   </PropertyGroup>
 </Project>

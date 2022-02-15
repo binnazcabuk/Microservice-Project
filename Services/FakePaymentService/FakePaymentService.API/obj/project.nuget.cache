@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "j4Ka1M3rQ/3MYfYR/qk9h87pDE1+lrwXWniIOmcHZZg5KyXgBXMiU7R6v2S6iXCNzvkGnLMbRlLKosmnb70zKw==",
+  "dgSpecHash": "Jx+VEOgxcO+SJ7i4MrrRih+DLaP4fALWo+pxgk1kPAsVPpX1AQsT8Pi65s9YH7B11ZL76mOgYksYQ8ZiDWcfKA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\FakePaymentService\\FakePaymentService.API\\FakePaymentService.API.csproj",
   "expectedPackageFiles": [
@@ -97,7 +97,8 @@
     "C:\\Users\\Teknar\\.nuget\\packages\\system.threading.channels\\4.7.1\\system.threading.channels.4.7.1.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
-    "C:\\Users\\Teknar\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512"
+    "C:\\Users\\Teknar\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }

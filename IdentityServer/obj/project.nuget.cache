@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LCLkO3wFIocQvN256VjfSe/GgI/STzYx+WCLvTv9o2R71lElwEX0wnR0394g9QoUYewsOQFByFGPqzFEzv6SLA==",
+  "dgSpecHash": "229NU2Q4JXjyTv8dbkldTymOwB+XYMbWEJgY//d8VT18BElGo1OhObi2UWmjPFvt4ff3hJXpvzYDTbernEx7Bg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\IdetityServer\\IdetityServer.csproj",
+  "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\IdentityServer\\IdetityServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Teknar\\.nuget\\packages\\identitymodel\\4.3.0\\identitymodel.4.3.0.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\identityserver4\\4.0.0\\identityserver4.4.0.0.nupkg.sha512",

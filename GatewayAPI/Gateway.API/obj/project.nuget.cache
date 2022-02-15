@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "3LjXonuIg4RqmK86VoGQ4oFyEkpuAt6HB5VO/vj42NgRQB6ZASDyT5slcx55JkfNbnzYQ6ZcstteNIcgdFUJbg==",
+  "dgSpecHash": "2M1uSLJAAkNfSV5q81BqV0sX0vxT7kbS1BQLtqtYs7ZmzAR3g7L/2VGBZ5WQPo0eOVW0tpVrU4JDe0gusC/TMA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\GatewayAPI\\Gateway.API\\Gateway.API.csproj",
   "expectedPackageFiles": [
@@ -23,7 +23,8 @@
     "C:\\Users\\Teknar\\.nuget\\packages\\ocelot\\17.0.1\\ocelot.17.0.1.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.7.1\\system.identitymodel.tokens.jwt.6.7.1.nupkg.sha512",
-    "C:\\Users\\Teknar\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512"
+    "C:\\Users\\Teknar\\.nuget\\packages\\system.security.cryptography.cng\\4.5.0\\system.security.cryptography.cng.4.5.0.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }

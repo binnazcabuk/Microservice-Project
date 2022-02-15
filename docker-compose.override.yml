@@ -27,9 +27,9 @@ services:
     container_name: identitydb
     restart: always
     ports:
-      - "1433:1433"
+      - "1455:1433"
     volumes:
-     - discount_volume:/var/opt/mssql
+     - identity_volume:/var/opt/mssql
     environment:
       - ACCEPT_EULA=Y
       - SA_PASSWORD=Pass12**
@@ -65,7 +65,7 @@ services:
       restart: on-failure
       environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - "ConnectionStrings:DefaultConnection=Server=identitydb,1433;Database=IdentityDB; User=sa; Password=Pass12**"
+      - "ConnectionStrings:DefaultConnection=Server=identitydb,1433;Database=IdentityDB;User=sa;Password=Pass12**"
       ports:
       - "5001:80"
       depends_on:
@@ -118,7 +118,7 @@ services:
       - ASPNETCORE_ENVIRONMENT=Development
       - IdentityServerURL=http://identityserver.api
       - RabbitMQUrl=rabbitmq
-      - "ConnectionStrings:DefaultConnection=Server=identitydb,1444;Database=IdentityDB; User=sa; Password=Pass12**"
+      - "ConnectionStrings:DefaultConnection=Server=orderdb,1433;Database=OrderDb; User=sa; Password=Pass12**"
       ports:
       - "5015:80"
       depends_on:

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "YYJjkKp0M6G2RZm3WHCSn4m1w5ysw43gL0ZeRmbg9PAixdOvIl0EnDDRjFicedlMChjAd6zpgxN7wzProaoWNg==",
+  "dgSpecHash": "zXX6Q4Q6E5SilGPBuu7bZNx6ZyhP78c+fR7YMIsnNQf2kQd3xDiwfkc3ttxI+XUGhSibMB28JEZWW6+sis/Y8w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\DiscountService\\DiscountService.API\\DiscountService.API.csproj",
   "expectedPackageFiles": [
@@ -93,7 +93,8 @@
     "C:\\Users\\Teknar\\.nuget\\packages\\system.threading.tasks\\4.0.11\\system.threading.tasks.4.0.11.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.threading.tasks.extensions\\4.5.1\\system.threading.tasks.extensions.4.5.1.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.readerwriter\\4.0.11\\system.xml.readerwriter.4.0.11.nupkg.sha512",
-    "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512"
+    "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.xdocument\\4.0.11\\system.xml.xdocument.4.0.11.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "TG2058xDn+HLAgh7nOhKbkdWxYzXYeMPmE17nBanU+jg6wRqGglSF0xw00T/TmpurlStWS/o23Os5duOHthXiw==",
+  "dgSpecHash": "gqX/yNBe6/VHQEKx+s4gYdIQQallppCshBbvJExEe6qdZadL9VMz233wpTPDuw81NSyXh6SgvDWCfX5cSEm66w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Teknar\\Desktop\\CoursesMicroserviceProject\\Services\\OrderService\\OrderService.API\\OrderService.API.csproj",
   "expectedPackageFiles": [
@@ -151,7 +151,8 @@
     "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\Teknar\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\Teknar\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.13\\microsoft.netcore.app.host.win-x64.5.0.13.nupkg.sha512"
   ],
   "logs": []
 }
