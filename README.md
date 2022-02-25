@@ -29,6 +29,7 @@ Microservis mimarisi kullanılarak oluşturulan çeşitli kategorilerde kurslar 
 
 <hr><b>IdentityServer Microservice:</b>Kullanıcı datalarının tutulmasından,token ve refreshtoken üretilmesinden sorumlu olan microservis.
 <ul>
+<li>Identity Server netcore 3.1'i kullandık.Çünkü şuan belirli süre için 3.1 için ücretsiz</li>
 <li>Sql Server(Veritabanı)</li>
 <li>Token/RefreshToken üretmek</li>
 <li>OAuth 2.0</li>
